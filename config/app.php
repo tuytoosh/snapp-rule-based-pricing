@@ -18,14 +18,9 @@ return [
     'name' => env('APP_NAME', 'Laravel'),
 
     'inputs' => [
-        "userType" => [
-            "B2B",
-            "B2C"
-        ],
-        "channelType" => [
-            "Snapp",
-            "Ap"
-        ]
+        "userType",
+        "channelType",
+        "minPrice"
     ],
 
     /*

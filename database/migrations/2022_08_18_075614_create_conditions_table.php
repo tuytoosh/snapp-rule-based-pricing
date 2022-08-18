@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('conditions', function (Blueprint $table) {
             $table->id();
             $inputs = config('app.inputs');
-            foreach ($inputs as $key => $values) {
-                $table->enum($key, $values);
+            foreach ($inputs as $field) {
+                $table->string($field);
             }
         });
     }

@@ -6,7 +6,7 @@ use App\Http\Controllers\ConditionController;
 use App\Http\Controllers\RuleController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('apply', [ApplyController::class, 'apply']);
+Route::post('apply', [ApplyController::class, 'apply']);
 
 Route::post('condition', [ConditionController::class, 'add']);
 Route::get('conditions', [ConditionController::class, 'all']);

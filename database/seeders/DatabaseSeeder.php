@@ -21,11 +21,13 @@ class DatabaseSeeder extends Seeder
         $condition = new Condition();
         $condition->userType = "B2B";
         $condition->channelType = 'Snapp';
+        $condition->minPrice = 10000;
         $condition->save();
 
         $condition = new Condition();
         $condition->userType = "B2C";
         $condition->channelType = 'Ap';
+        $condition->minPrice = 20000;
         $condition->save();
 
         $action = new Action();
