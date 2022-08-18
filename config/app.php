@@ -22,10 +22,10 @@ return [
             "B2B",
             "B2C"
         ],
-        // "channelType" => [
-        //     "Snapp",
-        //     "Ap"
-        // ]
+        "channelType" => [
+            "Snapp",
+            "Ap"
+        ]
     ],
 
     /*
