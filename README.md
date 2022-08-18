@@ -10,3 +10,24 @@
 
 برای تست API از Postman استفاده شد که خروجی داکیومنت آن در فایل پی دی اف زیر قابل مشاهده است:
 [Documentation.pdf](https://github.com/tuytoosh/snapp-rule-based-pricing/blob/master/Docs.pdf)
+
+
+## How to use
+
+make sail container:
+```
+./vendor/bin/sail up -d
+```
+
+Install dependencies:
+```
+./vendor/bin/sail composer install
+```
+Run migrations:
+```
+./vendor/bin/sail php artisan migrate --seed
+```
+Access to the website in the following url
+```
+http://localhost:8000
+```
